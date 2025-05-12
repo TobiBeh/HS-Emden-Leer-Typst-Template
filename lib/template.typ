@@ -7,10 +7,6 @@
 #import "pages/list_of_tables.typ": create_list_of_tables
 #import "pages/listings.typ": create_listings
 #import "pages/declaration_of_independent_processing.typ": create_declaration_of_independent_processing
-#import "pages/todo.typ": *
-#import "pages/abbreviations_page.typ": create_abbreviations_page
-#import "pages/glossary_page.typ": create_glossary_page
-
 #import "pages/dependencies.typ": *  // Import dependencies for the template
 
 #let create_document(

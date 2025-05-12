@@ -28,15 +28,15 @@ Here are some sample pages of what the final document would look like if created
 <table>
   <tr>
     <td width="33%">
-      <img src="lib/assets/logo.svg" alt="Cover Page Example">
+      <img src="example/snapshots/thumbnail.png" alt="Cover Page Example">
       <p align="center"><em>Cover Page</em></p>
     </td>
     <td width="33%">
-      <img src="lib/assets/logo.svg" alt="Table of Contents Example">
+      <img src="example/snapshots/toc.png" alt="Table of Contents Example">
       <p align="center"><em>Table of Contents</em></p>
     </td>
     <td width="33%">
-      <img src="lib/assets/logo.svg" alt="Content Page Example">
+      <img src="example/snapshots/intro.png" alt="Content Page Example">
       <p align="center"><em>Content Page</em></p>
     </td>
   </tr>

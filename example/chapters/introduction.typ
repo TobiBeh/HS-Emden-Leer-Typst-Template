@@ -1,5 +1,7 @@
-#import "../../lib/pages/dependencies.typ": *
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.8": *
 #show: codly-init
+
 = Introduction
 
 In this exemplary document I will show you how to use the HS Emden/Leer template for academic writing.
@@ -24,7 +26,7 @@ The template also generates a list of figures and tables, making it easy to refe
 You can include figures by using the `#figure` command. 
 
 #figure(
-  image("../../lib/logo.svg", width: 50%),
+  image("../logo.svg", width: 50%),
   caption: [Logo of the HS Emden/Leer],
 ) <LogoHSEmdenLeer>
 

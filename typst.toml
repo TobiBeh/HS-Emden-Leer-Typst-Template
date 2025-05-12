@@ -1,7 +1,7 @@
 [package]
 name = "hs-emden-leer-template"
 version = "0.1.0"
-entrypoint = "lib.typ"
+entrypoint = "lib/lib.typ"
 authors = ["Tobias Behrendt"]
 license = "MIT"
 description = "A clean, professional template for academic writing at University of Applied Sciences Emden/Leer."
@@ -12,6 +12,8 @@ compiler = "0.13.1"
 disciplines = ["computer-science", "engineering", "business", "economics"]
 
 [template]
-path = "lib/template.typ"
+path = "example"
+entrypoint = "main.typ"
+thumbnail = "example/snapshots/thumbnail.png"
 title = "HS Emden/Leer Template"
 description = "A modern template for academic documents at University of Applied Sciences Emden/Leer."

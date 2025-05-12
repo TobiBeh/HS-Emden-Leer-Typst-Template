@@ -1,7 +1,8 @@
-#import "../lib/pages/dependencies.typ"
+#import "@preview/hs-emden-leer-template:0.1.0": thesis
+#import "@preview/glossarium:0.5.6": *
 #import "abbreviations.typ": abbreviations-entry-list
 #import "glossary.typ": glossary-entry-list
-#import "../lib/lib.typ": thesis
+
 #show: thesis.with(
   title: "Sample Document Title",
   authors: ("Jane Doe", "John Smith"),
@@ -22,15 +23,15 @@
   lang: "en",
   enable_code_highlighting: true,
   font_size: 12pt,
-
 )
+
 // Set roman numbering for preliminary sections
 #set page(
     numbering: "i",
 )
 #counter(page).update(5)
+
 // Print abbreviations
-#import "@preview/glossarium:0.5.6": *
 #pagebreak(weak: true)
 #heading("Abbreviations", numbering: none)
 #show: make-glossary
@@ -44,12 +45,14 @@
 #show: make-glossary
 #register-glossary(glossary-entry-list)
 #print-glossary(glossary-entry-list, disable-back-references: true)
+
 #set page(
     numbering: "1",
 )
 #counter(page).update(1)
+
 // Content chapters
 #include "chapters/introduction.typ"
 #include "chapters/features.typ"
 
-#bibliography("bibliography.bib",style: "harvard-cite-them-right")
+#bibliography("bibliography.bib", style: "harvard-cite-them-right")
