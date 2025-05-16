@@ -1,4 +1,4 @@
-#import "@preview/hs-emden-leer-template:0.1.0": thesis
+#import "@preview/ostfriesen-layout:0.1.0": thesis
 #import "@preview/glossarium:0.5.6": *
 #import "abbreviations.typ": abbreviations-entry-list
 #import "glossary.typ": glossary-entry-list
@@ -9,7 +9,7 @@
   matriculation_numbers: ("123456", "654321"),
   documentType: "Sample Document Type",
   faculty:  "Engineering",
-  department: "Computer Science",
+  module: "Computer Science",
   course_of_studies: "Applied Computer Science",
   supervisor1: "Prof. Dr. Example Supervisor",
   supervisor2: "Second Supervisor, M.Sc.",
@@ -20,7 +20,7 @@
     including headings, figures, tables, and citations.
   ],
   keywords: ("Template", "Academic", "Thesis"),
-  lang: "en",
+  lang: "de",
   enable_code_highlighting: true,
   font_size: 12pt,
 )

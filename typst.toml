@@ -1,5 +1,5 @@
 [package]
-name = "hs-emden-leer-template"
+name = "ostfriesen-layout"
 version = "0.1.0"
 entrypoint = "lib/lib.typ"
 authors = ["Tobias Behrendt"]
@@ -15,5 +15,3 @@ disciplines = ["computer-science", "engineering", "business", "economics"]
 path = "example"
 entrypoint = "main.typ"
 thumbnail = "example/snapshots/thumbnail.png"
-title = "HS Emden/Leer Template"
-description = "A modern template for academic documents at University of Applied Sciences Emden/Leer."
