@@ -3,17 +3,17 @@
 #let create_cover_page(
   title: none,
   authors: (),
-  matriculation_numbers: (),
+  matriculation-numbers: (),
   date: none,
   documentType: none,
   faculty: none,
   module: none,
-  course_of_studies: none,
+  course-of-studies: none,
   supervisor1: none,
   supervisor2: none,
   supervisor3: none,
   company: none,
-  company_supervisor: none,
+  company-supervisor: none,
   lang: "en"
 ) = {
   // Localization
@@ -171,7 +171,7 @@
     // Use consistent spacing of 19mm for all cases
     let mat_numbers_pos = 19mm
     
-    if matriculation_numbers.len() > 0 or display_authors.len() > 0 {
+    if matriculation-numbers.len() > 0 or display_authors.len() > 0 {
       place(
         bottom,
         dy: mat_numbers_pos,
@@ -201,8 +201,8 @@
                     stack(
                       author_entry(
                         author, 
-                        i < matriculation_numbers.len(), 
-                        if i < matriculation_numbers.len() { matriculation_numbers.at(i) } else { "" }
+                        i < matriculation-numbers.len(), 
+                        if i < matriculation-numbers.len() { matriculation-numbers.at(i) } else { "" }
                       ),
                       if i < 4 { v(3mm) }
                     )
@@ -217,8 +217,8 @@
                     stack(
                       author_entry(
                         author, 
-                        actual_i < matriculation_numbers.len(), 
-                        if actual_i < matriculation_numbers.len() { matriculation_numbers.at(actual_i) } else { "" }
+                        actual_i < matriculation-numbers.len(), 
+                        if actual_i < matriculation-numbers.len() { matriculation-numbers.at(actual_i) } else { "" }
                       ),
                       if i < display_authors.slice(5).len() - 1 { v(3mm) }
                     )
@@ -235,8 +235,8 @@
                     stack(
                       author_entry(
                         author, 
-                        i < matriculation_numbers.len(), 
-                        if i < matriculation_numbers.len() { matriculation_numbers.at(i) } else { "" }
+                        i < matriculation-numbers.len(), 
+                        if i < matriculation-numbers.len() { matriculation-numbers.at(i) } else { "" }
                       ),
                       if i < display_authors.len() - 1 { v(3mm) }
                     )
@@ -281,9 +281,9 @@
           v(2mm)
           text(t.at("company") + ": " + text(upper(company), weight: "bold"), size: 10pt)
         },
-        if company_supervisor != none {
+        if company-supervisor != none {
           v(2mm)
-          text(t.at("company_supervisor") + ": " + text(upper(company_supervisor), weight: "bold"), size: 10pt)
+          text(t.at("company_supervisor") + ": " + text(upper(company-supervisor), weight: "bold"), size: 10pt)
         }
       )
     )
@@ -297,7 +297,7 @@
       (if supervisor2 != none { 1 } else { 0 }) +
       (if supervisor3 != none { 1 } else { 0 }) +
       (if company != none { 1 } else { 0 }) +
-      (if company_supervisor != none { 1 } else { 0 })
+      (if company-supervisor != none { 1 } else { 0 })
     )
     
     // Base position
@@ -319,10 +319,10 @@
     }
     
     // Calculate final position
-    let content_pos = if supervisor1 != none or supervisor2 != none or supervisor3 != none or company != none or company_supervisor != none {
+    let content_pos = if supervisor1 != none or supervisor2 != none or supervisor3 != none or company != none or company-supervisor != none {
       // If supervisors exist, adjust based on author count and supervisor count
       base_content_pos + author_adjustment + supervisor_adjustment
-    } else if matriculation_numbers.len() > 0 or authors.len() > 0 {
+    } else if matriculation-numbers.len() > 0 or authors.len() > 0 {
       // If no supervisors but authors exist, use a different position
       -45mm + author_adjustment
     } else if date != none {
@@ -346,8 +346,8 @@
         if module != none {
           text(t.at("in_the_module") + " " + text(module, style: "italic"))
         },
-        if course_of_studies != none {
-          text(t.at("of_the_study_course") + " " + text(course_of_studies, style: "italic"))
+        if course-of-studies != none {
+          text(t.at("of_the_study_course") + " " + text(course-of-studies, style: "italic"))
         },
         if faculty != none {
           text(t.at("at_the_faculty_of") + " " + text(faculty, style: "italic"))

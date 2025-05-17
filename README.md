@@ -68,34 +68,34 @@ The template provides numerous configuration options to customize your document:
 | **Document Basics**       |                  |                      |          |                                                            |
 | `title`                   | string           | none                 | required | The title of your document                                 |
 | `authors`                 | array or string  | ()                   | required | Author names (single author or multiple)                   |
-| `matriculation_numbers`   | array or string  | ()                   | optional | Student matriculation numbers                              |
+| `matriculation-numbers`   | array or string  | ()                   | optional | Student matriculation numbers                              |
 | `date`                    | string or date   | none                 | required | Publication date (e.g., "May 2025" or datetime object)     |
 | `documentType`            | string           | none                 | required | Type of document (e.g., "Bachelor Thesis", "Master Thesis")|
 | **University Information**|                  |                      |          |                                                            |
 | `faculty`                 | string           | none                 | required | Faculty name                                               |
 | `department`              | string           | none                 | required | Department name                                            |
-| `course_of_studies`       | string           | none                 | optional | Course of studies name                                     |
+| `course-of-studies`       | string           | none                 | optional | Course of studies name                                     |
 | **Supervision Details**   |                  |                      |          |                                                            |
 | `supervisor1`             | string           | none                 | required | First/primary supervisor                                   |
 | `supervisor2`             | string           | none                 | optional | Second supervisor                                          |
 | `supervisor3`             | string           | none                 | optional | Third supervisor                                           |
 | **Company Information**   |                  |                      |          |                                                            |
 | `company`                 | string           | none                 | optional | Company name (for industry collaborations)                 |
-| `company_supervisor`      | string           | none                 | optional | Company supervisor name                                    |
+| `company-supervisor`      | string           | none                 | optional | Company supervisor name                                    |
 | **Content Metadata**      |                  |                      |          |                                                            |
 | `abstract`                | content          | none                 | optional | Document abstract                                          |
 | `keywords`                | array or string  | ()                   | optional | Keywords related to the document                           |
 | **Document Settings**     |                  |                      |          |                                                            |
-| `include_declaration`     | boolean          | true                 | optional | Include declaration of independent processing              |
+| `include-declaration`     | boolean          | true                 | optional | Include declaration of independent processing              |
 | `lang`                    | string           | "en"                 | optional | Document language: "en" (English) or "de" (German)         |
 | **Typography Settings**   |                  |                      |          |                                                            |
 | `font`                    | string           | "New Computer Modern"| optional | Font family                                                |
-| `font_size`               | length           | 11pt                 | optional | Base font size                                             |
-| `line_spacing`            | float            | 1.5                  | optional | Line spacing multiplier                                    |
+| `font-size`               | length           | 11pt                 | optional | Base font size                                             |
+| `line-spacing`            | float            | 1.5                  | optional | Line spacing multiplier                                    |
 | **Layout Settings**       |                  |                      |          |                                                            |
-| `lower_chapter_headings`  | boolean          | false                | optional | Reduce spacing for level-1-headings                        |
+| `lower-chapter-headings`  | boolean          | false                | optional | Reduce spacing for level-1-headings                        |
 | **Code Highlighting**     |                  |                      |          |                                                            |
-| `enable_code_highlighting`| boolean          | true                 | optional | Enable syntax highlighting for code blocks                 |
+| `enable-code-highlighting`| boolean          | true                 | optional | Enable syntax highlighting for code blocks                 |
 
 ### Usage Examples
 
