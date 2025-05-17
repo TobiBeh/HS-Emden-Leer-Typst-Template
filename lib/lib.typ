@@ -44,33 +44,33 @@
   body
 ) = {
   // Handle case where a single string is passed instead of array
-  let authors_array = if type(authors) == str { (authors,) } else { authors }
-  let matriculation_numbers_array = if type(matriculation-numbers) == str { (matriculation-numbers,) } else { matriculation-numbers }
-  let keywords_array = if type(keywords) == str { (keywords,) } else { keywords }
+  let authors-array = if type(authors) == str { (authors,) } else { authors }
+  let matriculation-numbers-array = if type(matriculation-numbers) == str { (matriculation-numbers,) } else { matriculation-numbers }
+  let keywords-array = if type(keywords) == str { (keywords,) } else { keywords }
   
   create_document(
     title: title,
-    authors: authors_array,
-    matriculation-numbers: matriculation_numbers_array,
+    authors: authors-array,
+    matriculation-numbers: matriculation-numbers-array,
     date: date,
     documentType: documentType,
     faculty: faculty,
     module: module,
-    course-of-studies: course_of_studies,
+    course-of-studies: course-of-studies,
     supervisor1: supervisor1,
     supervisor2: supervisor2,
     supervisor3: supervisor3,
     company: company,
-    company-supervisor: company_supervisor,
+    company-supervisor: company-supervisor,
     abstract: abstract,
-    keywords: keywords_array,
-    include-declaration: include_declaration,
+    keywords: keywords-array,
+    include-declaration: include-declaration,
     lang: lang,
     font: font,
-    font-size: font_size,
-    line-spacing: line_spacing,
-    enable-code-highlighting: enable_code_highlighting,
-    lower-chapter-headings: lower_chapter_headings,
+    font-size: font-size,
+    line-spacing: line-spacing,
+    enable-code-highlighting: enable-code-highlighting,
+    lower-chapter-headings: lower-chapter-headings,
     body
   )
 }

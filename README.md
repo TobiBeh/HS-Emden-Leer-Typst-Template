@@ -106,7 +106,7 @@ The template provides numerous configuration options to customize your document:
 #show: thesis.with(
   title: "Implementation of an Advanced Machine Learning Algorithm",
   authors: "John Doe",
-  matriculation_numbers: "123456",
+  matriculation-numbers: "123456",
   date: "May 2025", 
   documentType: "Master Thesis",
   faculty: "Faculty of Technology",
@@ -123,13 +123,13 @@ The template provides numerous configuration options to customize your document:
 #show: thesis.with(
   title: "Blockchain Technologies for Supply Chain Management",
   authors: ("John Doe", "Jane Smith"),
-  matriculation_numbers: ("123456", "789012"),
+  matriculation-numbers: ("123456", "789012"),
   date: datetime(year: 2025, month: 5, day: 11),
   documentType: "Group Project Report",
   
   faculty: "Faculty of Business Studies",
   department: "Business Informatics",
-  course_of_studies: "Digital Business Management",
+  course-of-studies: "Digital Business Management",
   
   supervisor1: "Prof. Dr. First Supervisor",
   supervisor2: "Second Supervisor"
@@ -144,17 +144,17 @@ The template provides numerous configuration options to customize your document:
 #show: thesis.with(
   title: "Development of an IoT Solution for Smart Manufacturing",
   authors: "John Doe",
-  matriculation_numbers: "123456",
+  matriculation-numbers: "123456",
   date: "May 2025",
   documentType: "Bachelor Thesis",
   
   faculty: "Faculty of Engineering",
   department: "Electrical Engineering",
-  course_of_studies: "Embedded Systems",
+  course-of-studies: "Embedded Systems",
   
   supervisor1: "Prof. Dr. Academic Supervisor",
   company: "TechCorp GmbH",
-  company_supervisor: "Dr. Industry Expert"
+  company-supervisor: "Dr. Industry Expert"
 )
 ```
 </details>

@@ -3,10 +3,10 @@
 #import "pages/cover.typ": create_cover_page
 #import "pages/abstract.typ": create_abstract_page
 #import "pages/outline.typ": create_outline
-#import "pages/list_of_figures.typ": create_list_of_figures
-#import "pages/list_of_tables.typ": create_list_of_tables
+#import "pages/list-of-figures.typ": create_list_of_figures
+#import "pages/list-of-tables.typ": create_list_of_tables
 #import "pages/listings.typ": create_listings
-#import "pages/declaration_of_independent_processing.typ": create_declaration_of_independent_processing
+#import "pages/declaration-of-independent-processing.typ": create_declaration_of_independent_processing
 #import "pages/dependencies.typ": *  // Import dependencies for the template
 
 #let create_document(

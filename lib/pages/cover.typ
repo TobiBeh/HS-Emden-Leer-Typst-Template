@@ -70,7 +70,7 @@
       v(10mm),
       //module
       if module != none {
-        text(t.at("cover_module"), size: 10pt, weight: "bold")
+        text(t.at("cover-module"), size: 10pt, weight: "bold")
         v(-2mm)
         text(module, size: 10pt)
       },
@@ -184,7 +184,7 @@
             // Define consistent author entry styling
             let author_entry(author, has_matnum, matnum) = {
               if has_matnum {
-                text(author + ": " + t.at("matriculation_number") + " " + matnum, size: 10pt)
+                text(author + ": " + t.at("matriculation-number") + " " + matnum, size: 10pt)
               } else {
                 text(author, size: 10pt)
               }
@@ -267,15 +267,15 @@
         line(start: (0pt, 0pt), length: 25pt, stroke: 1mm),
         v(4mm),
         if supervisor1 != none {
-          text(t.at("first_supervisor") + ": " + text(upper(supervisor1), weight: "bold"), size: 10pt)
+          text(t.at("first-supervisor") + ": " + text(upper(supervisor1), weight: "bold"), size: 10pt)
         },
         if supervisor2 != none {
           v(2mm)
-          text(t.at("second_supervisor") + ": " + text(upper(supervisor2), weight: "bold"), size: 10pt)
+          text(t.at("second-supervisor") + ": " + text(upper(supervisor2), weight: "bold"), size: 10pt)
         },
         if supervisor3 != none {
           v(2mm)
-          text(t.at("third_supervisor") + ": " + text(upper(supervisor3), weight: "bold"), size: 10pt)
+          text(t.at("third-supervisor") + ": " + text(upper(supervisor3), weight: "bold"), size: 10pt)
         },
         if company != none {
           v(2mm)
@@ -283,7 +283,7 @@
         },
         if company-supervisor != none {
           v(2mm)
-          text(t.at("company_supervisor") + ": " + text(upper(company-supervisor), weight: "bold"), size: 10pt)
+          text(t.at("company-supervisor") + ": " + text(upper(company-supervisor), weight: "bold"), size: 10pt)
         }
       )
     )
@@ -339,20 +339,20 @@
       stack(
         spacing: 3mm,
         if documentType != none {
-          text(documentType + " " + t.at("submitted_for_examination"))
+          text(documentType + " " + t.at("submitted-for-examination"))
         } else {
-          text(t.at("thesis_submitted_for_examination"))
+          text(t.at("thesis-submitted-for-examination"))
         },
         if module != none {
-          text(t.at("in_the_module") + " " + text(module, style: "italic"))
+          text(t.at("in-the-module") + " " + text(module, style: "italic"))
         },
         if course-of-studies != none {
-          text(t.at("of_the_study_course") + " " + text(course-of-studies, style: "italic"))
+          text(t.at("of-the-study-course") + " " + text(course-of-studies, style: "italic"))
         },
         if faculty != none {
-          text(t.at("at_the_faculty_of") + " " + text(faculty, style: "italic"))
+          text(t.at("at-the-faculty-of") + " " + text(faculty, style: "italic"))
         },
-        text(t.at("at_university"))
+        text(t.at("at-university"))
       )
     )
   }
