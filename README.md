@@ -242,8 +242,8 @@ To manually include a glossary section:
 ```typst
 #pagebreak()
 #heading("Glossary", numbering: none, outlined: true)
-#import "lib/pages/glossary.typ": glossary_entries
-#print-glossary(glossary_entries, show-all: true)
+#import "lib/pages/glossary.typ": glossary-entries
+#print-glossary(glossary-entries, show-all: true)
 ```
 </details>
 
